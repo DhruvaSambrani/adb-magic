@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import sys
+import subprocess
+import os
+
+while True:
+    _in = input("In: ")
+    subprocess.run(["/home/dhruva/winhome/AppData/Local/Android/Sdk/platform-tools/adb.exe", "shell", "input", "text", "\""+_in+"\n\""])
+    #subprocess.run(["/home/dhruva/winhome/AppData/Local/Android/Sdk/platform-tools/adb.exe", "shell", "input", "keyevent", "KEYCODE_ENTER"])
+
