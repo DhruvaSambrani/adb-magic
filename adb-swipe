@@ -17,6 +17,6 @@ def get_points_str(direction):
     percs = swipe_coords[direction]
     return " ".join([str(int((percs[i]*res[i])//100)) for i in range(5)])
 
-useless_cat_call = subprocess.Popen(["/home/dhruva/winhome/AppData/Local/Android/Sdk/platform-tools/adb.exe", "shell"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+useless_cat_call = subprocess.Popen(["adb", "shell"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 output, errors = useless_cat_call.communicate(input="input swipe "+get_points_str(sys.argv[1]))
 
