@@ -13,20 +13,20 @@ An experiment to see if an android phone can be used completely from ADB.
 ## ToDo
 
 - all 
-    - make them importable [easy]
-    - document things :joy:
-- add a single point for all scripts. Either [discuss]
+    - [x] make them importable [easy]
+    - [ ] document things :joy:
+- [ ] add a single point for all scripts. Either [discuss]
     - make a pakka UI with curses, which'll be super cool but hard
     - Discord way, where each command be preceded by a delimiter, like `/` for key, `;` for swipe etc
     - Vim way, with "modes", this seems unnecessarily complex
-- add clipboard sharing - SHOULD be easy and you'll find multiple SO posts [med]
-- adb-swipe - add speeds [easy]
+- [ ] add clipboard sharing - SHOULD be easy and you'll find multiple SO posts [med]
+- [ ] adb-swipe - add speeds [easy]
 - adb-ui 
-    - ignore case [easy(regex change)]
-    - allow user to put their own regex [hard, may collide with our regex]
+    - [ ] ignore case [easy(regex change)]
+    - [ ] allow user to put their own regex [hard, may collide with our regex]
 - adb-text
-    - run the adb command async, to allow better UI. Unicode? Emoji? [med, if possible]
-    - accept cli args. If none, then go into loop. [EZ-PZ]
+    - [ ] run the adb command async, to allow better UI. Unicode? Emoji? [med, if possible]
+    - [ ] accept cli args. If none, then go into loop. [EZ-PZ]
 - adb-notify 
-    - Add some ignores? It shows too many notifications. [med]
-    - Group notifications [med]
+    - [ ] Add some ignores? It shows too many notifications. [med]
+    - [ ] Group notifications [med]
