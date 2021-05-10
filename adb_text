@@ -9,7 +9,7 @@ def _preprocess(text):
     return text.translate(str.maketrans({"`": r"\`"}))
 
 def text(adbpath, text):
-    subprocess.run([adbpath, "shell", "input", "text", "\""+_preprocess(text)+"\n\""])
+    subprocess.run([adbpath, "shell", "input","keyboard", "text", "\""+_preprocess(text)+"\n\""])
 
 if __name__ == "__main__":
     adbpath = adb_config.getpath()
