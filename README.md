@@ -26,7 +26,7 @@ An experiment to see if an android phone can be used completely from ADB.
     - [ ] allow user to put their own regex [hard, may collide with our regex]
 - adb-text
     - [ ] run the adb command async, to allow better UI. Unicode? Emoji? [med, if possible]
-    - [ ] accept cli args. If none, then go into loop. [EZ-PZ]
+    - [x] accept cli args. If none, then go into loop. [EZ-PZ]
 - adb-notify 
     - [ ] Add some ignores? It shows too many notifications. [med]
     - [ ] Group notifications [med]
