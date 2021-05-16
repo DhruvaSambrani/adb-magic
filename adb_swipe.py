@@ -20,7 +20,7 @@ def _get_points_str(direction):
 
 def swipe(adbpath, direction):
     useless_cat_call = subprocess.Popen([adbpath, "shell"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    output, errors = useless_cat_call.communicate(input="input swipe "+_get_points_str(sys.argv[1]))
+    output, errors = useless_cat_call.communicate(input="input swipe "+_get_points_str(direction))
 
 if __name__=="__main__":
     swipe(adb_config.getpath(), sys.argv[1])

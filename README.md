@@ -25,8 +25,8 @@ An experiment to see if an android phone can be used completely from ADB.
     - [ ] ignore case [easy(regex change)]
     - [ ] allow user to put their own regex [hard, may collide with our regex]
 - adb-text
-    - [ ] run the adb command async, to allow better UI. Unicode? Emoji? [med, if possible]
-         - Looks impossible, use https://github.com/senzhk/ADBKeyBoard instead
+    - [x] run the adb command async, to allow better UI. Emoji via discord-like names `:joy:`
+         - Requires https://github.com/senzhk/ADBKeyBoard instead
     - [x] accept cli args. If none, then go into loop. [EZ-PZ]
 - adb-notify 
     - [ ] Add some ignores? It shows too many notifications. [med]

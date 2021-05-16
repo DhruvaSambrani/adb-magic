@@ -23,9 +23,9 @@ name_key_map={
         "wake": "KEYCODE_WAKEUP"
     }
 
-def adb_key(adbpath, keyname):
+def key(adbpath, keyname):
     useless_cat_call = subprocess.Popen([adbpath, "shell"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     output, errors = useless_cat_call.communicate(input="input keyevent "+name_key_map[keyname])
 
 if __name__ == "__main__":
-    adb_key(adb_config.getpath(), sys.argv[1])
+    key(adb_config.getpath(), sys.argv[1])
