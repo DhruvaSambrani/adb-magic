@@ -10,6 +10,13 @@ An experiment to see if an android phone can be used completely from ADB.
 4. adb-text - Constant streaming of text. Requires Enter to send enabled :(. No Unicode or emoji support, yet.
 5. adb-notify - Pull all notifications, and open appropriate application if necessary.
 
+## Best Served with
+
+- KISS Launcher
+- ADBKeyBoard
+- SoundWire
+- spotify-tui
+
 ## ToDo
 
 - all 
