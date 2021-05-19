@@ -11,6 +11,7 @@ import base64
 
 def _preprocess(text, uni):
     if uni:
+        text = text.replace("\\n", "\n")
         text = emoji.emojize(text, use_aliases=True)
         return base64.b64encode(text.encode()).decode()
     else:
